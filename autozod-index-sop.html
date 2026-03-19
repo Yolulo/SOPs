@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yolulo — Autozod SOPs</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#00D9A0;--primary-dark:#00B885;--secondary:#6366F1;--bg-dark:#0A0E27;--bg-card:#131938;--bg-elevated:#1A2142;--text-primary:#F8FAFC;--text-secondary:#94A3B8;--text-muted:#64748B;--border:rgba(148,163,184,0.1);--success:#10B981;--warning:#F59E0B}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Manrope',sans-serif;background:var(--bg-dark);color:var(--text-primary);line-height:1.6;min-height:100vh}
+.header{background:linear-gradient(135deg,var(--bg-card) 0%,var(--bg-elevated) 100%);border-bottom:1px solid var(--border);padding:4rem 2rem 5rem;text-align:center;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-40%;right:-5%;width:600px;height:600px;background:radial-gradient(circle,rgba(0,217,160,0.07) 0%,transparent 70%);border-radius:50%;animation:float 20s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-20px)}}
+.header-content{position:relative;z-index:1}
+.brand{font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.75rem}
+.logo{font-size:3rem;font-weight:800;background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
+h1{font-size:2rem;font-weight:800;margin-bottom:.75rem}
+.subtitle{color:var(--text-secondary);font-size:1rem;max-width:560px;margin:0 auto 2rem}
+.nav-bar{background:rgba(10,14,39,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:.875rem 2rem;display:flex;gap:.75rem;align-items:center}
+.nav-home{padding:.6rem 1.25rem;background:rgba(0,217,160,0.08);border:1px solid rgba(0,217,160,0.2);border-radius:100px;color:var(--primary);text-decoration:none;font-weight:700;font-size:.85rem}
+.container{max-width:1000px;margin:0 auto;padding:3rem 2rem}
+.section-label{font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1.5rem;display:flex;align-items:center;gap:.75rem}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.sop-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;margin-bottom:3rem}
+.sop-card{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:1.75rem;transition:all .25s;text-decoration:none;display:block;position:relative;overflow:hidden}
+.sop-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,217,160,.04) 0%,transparent 60%);opacity:0;transition:opacity .25s}
+.sop-card:hover{transform:translateY(-3px);border-color:rgba(0,217,160,.35);box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.sop-card:hover::before{opacity:1}
+.card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1rem}
+.card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.card-role{display:inline-block;padding:.2rem .65rem;border-radius:6px;font-size:.7rem;font-weight:700;background:rgba(0,217,160,.12);color:var(--primary)}
+.card-title{font-size:1.05rem;font-weight:800;margin-bottom:.4rem;color:var(--text-primary)}
+.card-desc{font-size:.875rem;color:var(--text-secondary);line-height:1.5;margin-bottom:1.25rem}
+.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid var(--border)}
+.card-steps{font-size:.75rem;color:var(--text-muted);display:flex;align-items:center;gap:.35rem}
+.card-arrow{color:var(--primary);font-size:1rem}
+.sop-card:hover .card-arrow{transform:translateX(3px);display:inline-block;transition:transform .2s}
+.footer{background:var(--bg-card);border-top:1px solid var(--border);padding:2rem;text-align:center;margin-top:4rem}
+.footer-logo{font-size:1.3rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.3rem}
+.footer p{color:var(--text-muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-content">
+    <div class="brand">Yolulo Operations</div>
+    <div class="logo">Autozod</div>
+    <h1>Autozod SOPs</h1>
+    <p class="subtitle">Select the SOP you need. Each guide covers one specific area so you can find what you need quickly.</p>
+  </div>
+</div>
+<nav class="nav-bar">
+  <a class="nav-home" href="yolulo-sop-hub.html">← Hub</a>
+</nav>
+<div class="container">
+  <div class="section-label">All Autozod SOPs</div>
+  <div class="sop-cards">
+    
+<a href="autozod-dashboard-sop.html" class="sop-card">
+  <div class="card-top">
+    <div class="card-icon" style="background:rgba(0,217,160,0.12)">🗺️</div>
+    <span class="card-role">Ops / Dispatch</span>
+  </div>
+  <div class="card-title">Dashboard</div>
+  <div class="card-desc">Access Autozod from the Hyperzod admin sidebar and monitor the live dispatch map — task status panels and real-time agent availability.</div>
+  <div class="card-footer">
+    <span class="card-steps">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      2 sections
+    </span>
+    <span class="card-arrow">→</span>
+  </div>
+</a>
+
+<a href="autozod-agents-sop.html" class="sop-card">
+  <div class="card-top">
+    <div class="card-icon" style="background:rgba(99,102,241,0.12)">👤</div>
+    <span class="card-role">Onboarding / Ops</span>
+  </div>
+  <div class="card-title">Managing Agents</div>
+  <div class="card-desc">View the agents list, add new drivers, search for existing agents, update details, and activate or suspend accounts.</div>
+  <div class="card-footer">
+    <span class="card-steps">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      4 sections
+    </span>
+    <span class="card-arrow">→</span>
+  </div>
+</a>
+
+<a href="autozod-stripe-sop.html" class="sop-card">
+  <div class="card-top">
+    <div class="card-icon" style="background:rgba(245,158,11,0.12)">💳</div>
+    <span class="card-role">Onboarding</span>
+  </div>
+  <div class="card-title">Connect Agent Stripe</div>
+  <div class="card-desc">One-time Stripe Express onboarding — sign in, business type, personal details, bank account, and submit for verification.</div>
+  <div class="card-footer">
+    <span class="card-steps">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      5 sections
+    </span>
+    <span class="card-arrow">→</span>
+  </div>
+</a>
+
+<a href="autozod-task-history-sop.html" class="sop-card">
+  <div class="card-top">
+    <div class="card-icon" style="background:rgba(99,102,241,0.12)">📋</div>
+    <span class="card-role">Ops / Support</span>
+  </div>
+  <div class="card-title">Task History</div>
+  <div class="card-desc">Search by date range or Order ID, view full status timelines and assignment request logs, verify proof photos, and download task data.</div>
+  <div class="card-footer">
+    <span class="card-steps">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      6 sections
+    </span>
+    <span class="card-arrow">→</span>
+  </div>
+</a>
+
+<a href="autozod-payouts-sop.html" class="sop-card">
+  <div class="card-top">
+    <div class="card-icon" style="background:rgba(16,185,129,0.12)">💰</div>
+    <span class="card-role">Finance / Admin</span>
+  </div>
+  <div class="card-title">Payouts</div>
+  <div class="card-desc">Monitor driver commission payouts, filter by agent and status, diagnose and retry failed payments, and configure Stripe Connect API keys.</div>
+  <div class="card-footer">
+    <span class="card-steps">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      4 sections
+    </span>
+    <span class="card-arrow">→</span>
+  </div>
+</a>
+  
+<a href="autozod-settings-sop.html" class="sop-card">
+  <div class="card-top">
+    <div class="card-icon" style="background:rgba(139,92,246,0.12)">⚙️</div>
+    <span class="card-role">Admin</span>
+  </div>
+  <div class="card-title">Settings &amp; Account</div>
+  <div class="card-desc">Update profile, change password, enable 2FA, manage browser sessions, create API tokens, and manage team members and roles.</div>
+  <div class="card-footer">
+    <span class="card-steps">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      6 sections
+    </span>
+    <span class="card-arrow">→</span>
+  </div>
+</a>
+<a href="autozod-webhooks-sop.html" class="sop-card">
+  <div class="card-top">
+    <div class="card-icon" style="background:rgba(0,217,160,0.12)">🔗</div>
+    <span class="card-role">Admin / Tech</span>
+  </div>
+  <div class="card-title">Webhooks</div>
+  <div class="card-desc">Create Task Assigned and Task Status Updated webhooks, manage the current webhook list, and use the webhook log to debug event payloads.</div>
+  <div class="card-footer">
+    <span class="card-steps">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      4 sections
+    </span>
+    <span class="card-arrow">→</span>
+  </div>
+</a>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-logo">Yolulo</div>
+  <p>Autozod SOPs · Internal Use Only</p>
+</div>
+</body>
+</html>
